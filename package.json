@@ -1,9 +1,11 @@
 {
-  "name": "single-spa-simple-example",
+  "name": "microfrontend",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^5.2.1",
+    "bootstrap-vue": "^2.22.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -11,7 +13,7 @@
     "single-spa": "^4.3.4",
     "single-spa-react": "^2.10.2",
     "single-spa-vue": "^1.4.0",
-    "vue": "^2.6.10"
+    "vue": "^2.7.10"
   },
   "scripts": {
     "start": "webpack-dev-server --open",

@@ -2,7 +2,12 @@
   <b-container>
     <b-row>
       <b-col class="container">
-        <b-button variant="primary" v-on:click="prevPage">PREV</b-button>
+        <b-button
+          variant="primary"
+          :disabled="page < 2 ? true : false"
+          v-on:click="prevPage"
+          >PREV</b-button
+        >
         <b-button variant="primary" v-on:click="nextPage">NEXT</b-button>
       </b-col>
     </b-row>

@@ -13,7 +13,7 @@
         <span v-else-if="statusColorG" class="status-icon-g"></span>
         <span>Status: {{ event.status }}</span>
       </div>
-      <img :src="event.image" />
+      <img :src="event.image" class="img-card" />
     </div>
   </div>
 </template>
@@ -47,8 +47,11 @@ export default {
 </script>
 
 <style>
+.img-card {
+  width: 270;
+}
 .event-card {
-  width: 320px;
+  width: 300px;
   height: auto;
   min-height: 450px;
   background: rgb(60, 62, 68);
